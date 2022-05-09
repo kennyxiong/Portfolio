@@ -1,317 +1,357 @@
 /* CSS for Body */
 body{
 	 /* Removes default space on the left/right side. Affects nav too. */
-	margin: 0;
-	padding: 0;
-
+	width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
 	background-color: white;
 	box-sizing: border-box
 }	
 
 /* ---------------------------------------- Header Section ---------------------------------------- */
-/* Main website title */
-header{
-	background-color: white;
-}
+		/* Main website title */
+		header{
+			background-color: white;
+		}
 
-#logo{
-	text-align: center;
-}
+		#logo{
+			text-align: center;
+		}
 /* ---------------------------------------- Nagivation Section ---------------------------------------- */
 
-/* Vertical Navigation Bar */
-	nav{		
-		background-color: skyblue;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
-
-		padding-top: 14px;}
-
-/* Control Nav content arrangments */
-nav ul{
-	list-style-type: none;	/* Creates the vertical effect in Nav */
-	text-align: center;		/* Centers Nav Contents */
-}
-
-/* Creates the vertical effect */
-	nav li{
-		display: inline; 			
-	}
-
-/* Padding for Navigation Links */
-	nav a{
-		padding-right: 30px;
-	}
-
-/* Color for Navigation Links / Delete Link's underline */
-	nav a:link{
-		color: white;
-		text-decoration: none;
-	}
-	nav a:visited{
-		color: white;
-		text-decoration: none;
-	}
-	nav a:active{
-		color: black;
-		text-decoration: none;
-	}
-	nav a:hover{
-		color: black;
-		text-decoration: none;
-	}
-
-/* ---------------------------------------- Main Section ---------------------------------------- */
-
-/* Defines width and margins for the entire main section */
-	main{
-		max-width: 1700px;
-		margin: 20px auto;
-		
-		margin-bottom: 1px;
-	}
-
-	/* ---------------------------------------- City Section ---------------------------------------- */
-
-	/* City photo */
-		#city{
-			background:rgba(0,0,0,0)url(images/city.jpg) ;
-			height: 600px;
-			background-size: 100% 100%;
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-blend-mode: darken;
-			max-width: none;
-
-			margin-top: -20px;
-			margin-left: -15px;
-			margin-right: -15px;
+		/* Vertical Navigation Bar */
+		nav{		
+			background-color: skyblue;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			padding-top: 14px;
 		}
 
-	/* Content within the city photo */
-		#homecontent{
-			text-align: center;
-			padding-top: 150px;
+		/* Control Nav content arrangments */
+		nav ul{
+			list-style-type: none;	/* Creates the vertical effect in Nav */
+			text-align: center;		/* Centers Nav Contents */
+		}
 
+		/* Creates the vertical effect */
+		nav li{
+			display: inline; 			
+		}
+
+		/* Padding for Navigation Links */
+		nav a{
+			padding-right: 30px;
+		}
+
+		/* Color for Navigation Links / Delete Link's underline */
+		nav a:link{
 			color: white;
+			text-decoration: none;
+		}
+		nav a:visited{
+			color: white;
+			text-decoration: none;
+		}
+		nav a:active{
+			color: black;
+			text-decoration: none;
+		}
+		nav a:hover{
+			color: black;
+			text-decoration: none;
 		}
 
-	/* Kenny's Photo within the city photo*/
-		#homephoto{
-			border-radius: 50%;
-			border: 5px solid white;
+/* ---------------------------------------- Main Section (Home Page) ---------------------------------------- */
+
+		/* Defines width and margins for the entire main section */
+		main{
+			max-width: 1700px;
+			margin: 20px auto;
+			
+			margin-bottom: 1px;
 		}
 
-	/* ---------------------------------------- About Me Section ---------------------------------------- */
+		/* ---------------------------------------- City Photo (Home Page) ---------------------------------------- */
 
-	/* About Me Margin/Color/Padding codes */
-	#me_section{
-		background-color: lightgray;
+				/* City photo */
+				#city{
+					background:rgba(0,0,0,0)url(images/city.jpg) ;
+					height: 600px;
+					background-size: 100% 100%;
+					background-repeat: no-repeat;
+					background-attachment: fixed;
+					background-blend-mode: darken;
+					max-width: none;
 
-		padding-top: 25px;
-		padding-bottom: 25px;
+					margin-top: -20px;
+					margin-left: -15px;
+					margin-right: -15px;
+				}
 
-		margin-bottom: -48px;
-		margin-top: -24px;
-	}
+				/* Content within the city photo */
+				#homecontent{
+					text-align: center;
+					padding-top: 150px;
 
-	/* Kenny's Park Image */
-	#park{
-		border-radius: 50%;
-		border: 5px solid white;
+					color: white;
+				}
 
-		box-shadow: 0px 0px 1px 5px black;
-		margin-left: 200px;
-		margin-bottom: 20px;
-	}
+				/* Kenny's Photo within the city photo*/
+				#homephoto{
+					border-radius: 50%;
+					border: 5px solid white;
+				}
 
-	/* Park email circle */
-	#emailpark{
-		background-color: white;
-		font-size: 30px;
+		/* ---------------------------------------- About Me Section (Home Page) ---------------------------------------- */
 
-		padding-left: 8px;
-		padding-right: 8px;
-		padding-bottom: 5px;
-		border-radius: 30px;
+				/* About Me Margin/Color/Padding codes */
+				#me_section{
+					background-color: lightgray;
 
-		margin-left: 241px;
-		margin-right: 40px;
+					padding-top: 25px;
+					padding-bottom: 25px;
 
-		border: 3px solid black;
-	}
+					margin-bottom: -48px;
+					margin-top: -24px;
+				}
 
-	/* Park Facebook circle */
-	#facepark{
-		background-color: white;
-		font-size: 30px;
+				#aboutme_left{
+					text-align: center;
+				}
+				/* Kenny's Park Image */
+				#park{
+					border-radius: 50%;
+					border: 5px solid white;
 
-		padding-left: 9px;
-		padding-right: 9px;
-		padding-bottom: 4px;
-		border-radius: 40px;
+					box-shadow: 0px 0px 1px 5px black;
+					margin-bottom: 20px;
+				}
 
-		margin-right: 40px;
+				/* Park email circle */
+				#emailpark{
+					background-color: white;
+					font-size: 30px;
 
-		border: 3px solid black;
-	}
+					padding-left: 8px;
+					padding-right: 8px;
+					padding-bottom: 5px;
+					border-radius: 30px;
 
-	/* Park Linkedcircle circle */
-	#linkedpark{
-		background-color: white;
-		font-size: 30px;
+					
+					margin-right: 40px;
 
-		padding-left: 9px;
-		padding-right: 9px;
-		padding-bottom: 4px;
-		border-radius: 40px;
+					border: 3px solid black;
+				}
 
-		border: 3px solid black;
-	}
+				/* Park Facebook circle */
+				#facepark{
+					background-color: white;
+					font-size: 30px;
 
-	/* About Me Content Section */
-	#aboutme{
-		padding-top: 10px;
-		padding-bottom: 20px;
+					padding-left: 9px;
+					padding-right: 9px;
+					padding-bottom: 4px;
+					border-radius: 40px;
 
-		border: 5px solid black;
-		background-color: white;
-	
-	}
+					margin-right: 40px;
 
-	#aboutme p{
-		display: block;
- 		margin-left: auto;
-  	margin-right: auto;
- 		width: 90%;
-	}
+					border: 3px solid black;
+				}
 
-	#aboutme h2{
-		text-align: center;
-	}
+				/* Park Linkedcircle circle */
+				#linkedpark{
+					background-color: white;
+					font-size: 30px;
 
-	#aboutme a{
-		background-color: darkgray;
-		color: black;
+					padding-left: 9px;
+					padding-right: 9px;
+					padding-bottom: 4px;
+					border-radius: 40px;
 
-		border-radius: 10px;
-		border: 2px solid black;
+					border: 3px solid black;
+				}
 
-		padding: 7px;
+				/* About Me Content Body*/
+				#aboutme{
+					padding-top: 10px;
+					padding-bottom: 20px;
 
-		text-decoration: none;
+					border: 5px solid black;
+					background-color: white;
+				
+				}
 
-		display: block;
- 		margin-left: auto;
-  	margin-right: auto;
- 		width: 26%;
-	}
+				/* About Me Paragraph */
+				#aboutme p{
+					display: block;
+			 		margin-left: auto;
+			  	margin-right: auto;
+			 		width: 90%;
+				}
 
-	#aboutme a:link{
-		color: black;
-		text-decoration: none;
-	}
-	#aboutme a:visited{
-		color: black;
-		text-decoration: none;
-	}
-	#aboutme a:active{
-		color: white;
-		text-decoration: none;
-	}
-	#aboutme a:hover{
-		color: black;
-		text-decoration: none;
-		background-color: lightgrey;
-	}
+				/* About Me Title */
+				#aboutme h2{
+					text-align: center;
+				}
 
-	#aboutme ul{
-		margin-left: 50px;
-	}
+				/* About Me Link to Resume */
+				#aboutme a{
+					background-color: darkgray;
+					color: black;
 
-/* ---------------------------------------- Work Section ---------------------------------------- */
-#work_content{
-	background-color: white;
-	border-top: 1px solid black;
+					border-radius: 10px;
+					border: 2px solid black;
 
-	margin-bottom: -25px;
-	margin-left: -15px;
-	margin-right: -15px;
-	padding-top: 10px;
-}
+					padding: 7px;
 
-#work_content h2{
+					text-decoration: none;
+
+					display: block;
+			 		margin-left: auto;
+			  	margin-right: auto;
+			 		width: 26%;
+				}
+				#aboutme a:link{
+					color: black;
+					text-decoration: none;
+				}
+				#aboutme a:visited{
+					color: black;
+					text-decoration: none;
+				}
+				#aboutme a:active{
+					color: white;
+					text-decoration: none;
+				}
+				#aboutme a:hover{
+					color: black;
+					text-decoration: none;
+					background-color: lightgrey;
+				}
+
+				/* About Me Skill List */
+				#aboutme ul{
+					margin-left: 50px;
+				}
+
+		/* ---------------------------------------- Work Section (Home Page) ---------------------------------------- */
+				/* Work Main Body */
+				#work_content{
+					background-color: white;
+					border-top: 1px solid black;
+
+					margin-bottom: -25px;
+					margin-left: -15px;
+					margin-right: -15px;
+					padding-top: 10px;
+				}
+
+				/* Work Title */
+				#work_content h2{
+					text-align: center;
+				}
+
+				/* Work Cateogry Title */
+				#work_content h3{
+					text-align: center;
+				}
+
+				/* Work Icons */
+				#work_icons{
+					text-align: center;
+					width: 100%;
+				}
+
+				/* Border for work sections */
+				#work_border{
+					border: 4px solid black;
+					background-color: lightgray;
+					padding-top: 5px;
+					padding-bottom: 20px;
+
+					margin-left: 20px;
+					margin-right: 20px;
+					margin-bottom: 10px;
+
+					text-align: center;
+				}
+
+				/* work links */
+				#work_border a{
+					background-color: darkgray;
+					color: black;
+
+					border-radius: 10px;
+					border: 2px solid black;
+
+					padding: 4px;
+
+					text-decoration: none;
+
+				 	width: 21.5%;
+				}
+				#work_border a:link{
+						color: black;
+						text-decoration: none;
+					}
+				#work_border a:visited{
+						color: black;
+						text-decoration: none;
+					}
+				#work_border a:active{
+						color: white;
+						text-decoration: none;
+					}
+				#work_border a:hover{
+						color: black;
+						text-decoration: none;
+						background-color: lightgrey;
+					}
+
+				/* Work paragraph body */
+				#work_border p{
+					text-align: center;
+				}
+
+				/* work photos */
+				#home_website{
+				  border: 3px solid black;
+				  width: 350px;
+				}
+
+
+/* ---------------------------------------- Main Section (Website Page) ---------------------------------------- */
+
+/* Align head text */
+#website_text{
 	text-align: center;
 }
 
-#work_content h3{
+
+/* Align website images*/
+#website{
 	text-align: center;
 }
 
-#work_icons{
-	text-align: center;
-	width: 100%;
-}
-
-#work_border{
+/* Affects website image directly */
+#website_imageT{
 	border: 4px solid black;
-	background-color: lightgray;
-	padding-top: 5px;
-	padding-bottom: 20px;
-
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-bottom: 10px;
+	width: 555px;
 }
 
-#work_border a{
-	background-color: darkgray;
-	color: black;
-
-	border-radius: 10px;
-	border: 2px solid black;
-
-	padding: 4px;
-
-	text-decoration: none;
-
-	display: block;
- 	margin-left: auto;
-  margin-right: 180px;
- 	width: 21.5%;
+#website_imageB{
+	border: 4px solid black;
+	width: 800px;
 }
 
-#work_border a:link{
-		color: black;
-		text-decoration: none;
-	}
-#work_border a:visited{
-		color: black;
-		text-decoration: none;
-	}
-#work_border a:active{
-		color: white;
-		text-decoration: none;
-	}
-#work_border a:hover{
-		color: black;
-		text-decoration: none;
-		background-color: lightgrey;
-	}
-
-#work_border p{
-	text-align: center;
+/* Darken website image when mouse hovers */
+#website a:hover{
+	filter: brightness(80%)
 }
 
-#animal_website{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-
-  border: 3px solid black;
-}
-
+/* ---------------------------------------- Main Section (Home Page) ---------------------------------------- */
 #resume_section{
 	border-bottom: 1px solid black;
 }
@@ -320,22 +360,7 @@ nav ul{
 	text-align: center;
 }
 
-#website_text{
-	text-align: center;
-}
-
-#website{
-	text-align: center;
-}
-
-#website_image{
-	border: 3px solid black;
-}
-
-#website a:hover{
-		background-color: green;
-	}
-
+/* ---------------------------------------- Main Section (Game Page) ---------------------------------------- */
 #game{
 	text-align: center;
 }
@@ -380,8 +405,7 @@ a:hover{
 
 	border-radius: 100px;
 
-	margin-left: 125px;
-	margin-right: 80px;
+	margin-right: 60px;
 
 	border: 3px solid black;
 }
@@ -396,7 +420,7 @@ a:hover{
 	padding-bottom: 4px;
 	border-radius: 100px;
 
-	margin-right: 85px;
+	margin-right: 60px;
 	border: 3px solid black;
 }
 
@@ -405,12 +429,17 @@ a:hover{
 	background-color: white;
 	font-size: 60px;
 
+
 	padding-left: 16px;
 	padding-right: 16px;
 	padding-bottom: 5px;
 	border-radius: 100px;
 
 	border: 3px solid black;
+}
+
+#contact{
+	text-align: center;
 }
 
 #f2{
@@ -450,6 +479,18 @@ input[type=submit]{
 	h1{
 		font-size: 1.8em;
 	}
+
+	iframe{
+		width: 350px;
+	}
+
+	#home_website{
+		width: 200px;
+	}
+
+	#website_imageT{
+		width: 400px;
+	}
 }
 
 /* CSS for Smartphones */
@@ -457,4 +498,28 @@ input[type=submit]{
 	h1{
 		font-size: 1.5em;
 	}
+
+	iframe{
+		width: 250px;
+	}
+
+	#emailcircle{
+		margin-right: 5px;
+	}
+	#facecircle{
+		margin-right: 5px;
+	}
+
+	#home_website{
+		width: 150px;
+	}
+
+	#website_imageT{
+		width: 280px;
+	}
+
+	#website_imageB{
+	width: 600px;
+	}
+
 }
